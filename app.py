@@ -1,5 +1,5 @@
 import streamlit as st
-from predict_page import show_predict_page
+from predict_page_sde import show_predict_page
 from explore_page import show_explore_page
 # Select boz where "Predict", "Explore" are the options
 page = st.sidebar.selectbox("Explore Or Predict", ("Predict", "Explore"))

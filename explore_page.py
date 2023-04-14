@@ -30,6 +30,7 @@ def clean_experience(x):
 
 #executed once, it will be saved since the output will be the same, better performance
 @st.cache_data
+
 # this function cleans the data
 def load_data():
     df = pd.read_csv("survey_results_public.csv")
