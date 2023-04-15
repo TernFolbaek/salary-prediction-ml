@@ -4,7 +4,7 @@ import numpy as np
 
 # function to save model into variable
 def load_model():
-    with open('saved_steps.pkl', 'rb') as file:
+    with open('saved_steps_sde.pkl', 'rb') as file:
         data = pickle.load(file)
     return data
 
@@ -15,7 +15,7 @@ le_country = data["le_country"]
 le_education = data["le_education"]
 
 # following function creates our streamlit application
-def show_predict_page():
+def show_predict_page_sde():
     st.title("Software Developer Salary Prediction")
 
     # """### {creates h3 tag} """
@@ -66,4 +66,4 @@ def show_predict_page():
         salary = regressor.predict(X)
 
         # print the salary with 2 decimals, the salary variable is a np array, which is why we want to access the first value
-        st.subheader(f"The estimated salary is ${salary[0]}")
+        st.subheader(f"The estimated salary is ${salary[0]:.2f}")

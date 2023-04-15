@@ -57,11 +57,11 @@ def load_data():
 
 df = load_data()
 
-def show_explore_page():
+def show_explore_page_sde():
     st.title("Explore Software Engineer Salaries")
 
     st.write(
-        """"### Stack Overflow Developer Survey 2020"""
+        """### Stack Overflow Developer Survey 2020"""
     )
 
     # accessing values of country category in data-frame
