@@ -40,11 +40,8 @@ def show_predict_page_ds():
     )
 
     positions = (
-        "Data Engineer",   
-        "Data Scientist",                                  
-        "Data Analyst",                       
-        "Machine Learning Engineer",              
-        "Analytics Engineer "
+        'Data Engineer',  'Analytics Engineer',
+       'Machine Learning Engineer', 'Data Scientist', 'Data Analyst'
     )
 
     # the country the user selects will be saved in the variable country
